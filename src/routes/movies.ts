@@ -15,10 +15,10 @@ router.get('/:id', (req, res) => {
   else res.status(404).json({ message: `No movie with the id ${idToFind} can be found`})
 })
 
-router.post('/add/:id', (req, res) => {
-  let movieToAdd = req.params.id
+router.post('/add', (req, res) => {
+  let movieToAdd = req.body
   console.log(movieToAdd)
-  res.json({ id: movieToAdd, message: 'Request recieved'})
+  res.status(201).json({ data: movieToAdd, message: 'Request recieved'})
 })
 
 export default router
