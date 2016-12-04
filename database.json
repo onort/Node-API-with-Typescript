@@ -1,0 +1,47 @@
+[
+  {
+    "_id": 0,
+    "name": "Test",
+    "genre": "Drama",
+    "release_date": 2000,
+    "language": "English",
+    "length": 0,
+    "box_office": 0
+  },
+  {
+    "_id": 1,
+    "name": "Deux jours, une nuit",
+    "genre": "Drama",
+    "release_date": 2014,
+    "language": "French",
+    "length": 95,
+    "box_office": 1333900
+  },
+  {
+    "_id": 2,
+    "name": "Star Wars: The Force Awakens",
+    "genre": "Sci-Fi",
+    "release_date": 2015,
+    "language": "English",
+    "length": 136,
+    "box_office": 936627416
+  },
+  {
+    "_id": 3,
+    "name": "Die fetten Jahre sind vorbei ",
+    "genre": "Drama",
+    "release_date": 2004,
+    "language": "German",
+    "length": 127,
+    "box_office": 873935
+  },
+  {
+    "_id": 4,
+    "name": "Gişe Memuru",
+    "genre": "Comedy",
+    "release_date": 2011,
+    "language": "Turkish",
+    "length": 96,
+    "box_office": 56500
+  }
+]
