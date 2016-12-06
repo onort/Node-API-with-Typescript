@@ -1,23 +1,5 @@
 [
   {
-    "_id": "0",
-    "name": "Test",
-    "genre": "Drama",
-    "release_date": 2000,
-    "language": "English",
-    "length": 0,
-    "box_office": 0
-  },
-  {
-    "_id": "1",
-    "name": "Deux jours, une nuit",
-    "genre": "Drama",
-    "release_date": 2014,
-    "language": "French",
-    "length": 95,
-    "box_office": 1333900
-  },
-  {
     "_id": "2",
     "name": "Star Wars: The Force Awakens",
     "genre": "Sci-Fi",
@@ -43,5 +25,23 @@
     "language": "Turkish",
     "length": 96,
     "box_office": 56500
+  },
+  {
+    "name": "Test Entry: Add",
+    "genre": "Sci-Fi",
+    "release_date": "1999",
+    "length": "100",
+    "box_office": "199199",
+    "language": "Turkish",
+    "_id": "rkTJ194ml"
+  },
+  {
+    "name": "Test Entry: Updated-!!",
+    "genre": "Sci-Fi",
+    "release_date": "1999",
+    "length": "100",
+    "box_office": "199199",
+    "language": "Turkish",
+    "_id": "r1kzkq47g"
   }
 ]

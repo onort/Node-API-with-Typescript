@@ -17,7 +17,7 @@ export function getById(id) {
 
 export function add(movie) {
   data.push(movie)
-  updateDB(data)
+  updateDB(data)  
 }
 
 export function remove(id) {
@@ -28,7 +28,6 @@ export function remove(id) {
 
 export function update(id, updatedMovie) {
   let updateIndex = data.findIndex(movie => movie._id === id)
-  let movie = getById(id)
   data[updateIndex] = updatedMovie
   updateDB(data)
 }

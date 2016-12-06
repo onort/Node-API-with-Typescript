@@ -21,15 +21,15 @@ router.get('/:id', (req, res) => {
 })
 
 router.post('/add', (req, res) => {
-  let movieToAdd = req.body
+  let movieToAdd = req.body  
   let { name, genre, release_date, language, length, box_office } = movieToAdd
   // TODO: Validate movie data
   movieToAdd._id = shortid.generate()
-  if (name && release_date && box_office) { //replace
+  if (name && release_date && box_office) { 
     db.add(movieToAdd)
-    res.status(201).json({ status: 'success', message: `Movie "${name}" successfully added to our database with an id of ${movieToAdd._id}`})
+    res.status(201).json({ message: `Movie "${name}" successfully added to our database with an id of ${movieToAdd._id}`})
   } else {
-    res.json({ message: 'Movie you want to add should have a name, genre, release_date, language, length and box office data'})
+    res.status(404).json({ status: 'error', message: 'Movie you want to add should have a name, genre, release_date, language, length and box office data'})
   }
 })
 
@@ -38,10 +38,17 @@ router.delete('/delete/:id', (req, res) =>{
   res.status(201).json({ status: 'success', message: `Movie deleted` })
 })
 
-// router.put('/update/:id', (req, res) => {
-//   // Validate
-//   let updatedMovie = req.body
-//   db.update(req.params.id, updatedMovie)
-// })
+router.put('/update/:id', (req, res) => {
+  //TODO: Validation
+  let updatedMovie = req.body
+  let { name, genre, release_date, language, length, box_office } = updatedMovie
+  updatedMovie._id = req.params.id
+  if (name && release_date && box_office) { //replace
+    db.update(req.params.id, updatedMovie)
+    res.status(201).json({ status: 'success', message: 'Movie data updated'})
+  } else {
+    res.status(404).json({ status: 'error', message: 'Name, genre, release_date, language, length and box office fields should be populated'})
+  }
+})
 
 export default router
