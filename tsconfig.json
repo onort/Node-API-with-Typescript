@@ -4,6 +4,7 @@
     "module": "commonjs",
     "sourceMap": true,
     "removeComments": true,
+    "compileOnSave": true,
     "outDir": "dist"
   },
   "include": [
